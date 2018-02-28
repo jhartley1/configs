@@ -1,4 +1,6 @@
 # Lines configured by zsh-newuser-install
+
+TERM=screen-256color
 HISTFILE=~/.histfile
 HISTSIZE=1000
 SAVEHIST=1000
@@ -61,8 +63,17 @@ unalias run-help
 alias help=run-help
 #End help
 
-
 #Start Aliases
+alias la='ls -al --color=auto'
 alias ls='ls --color=auto'
 alias emacs='emacs -nw'
 alias pacman='pacmatic'
+
+export NVM_DIR="/home/jhartley/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
+
+# The next line updates PATH for the Google Cloud SDK.
+source '/home/jhartley/Downloads/google-cloud-sdk/path.zsh.inc'
+
+# The next line enables shell command completion for gcloud.
+source '/home/jhartley/Downloads/google-cloud-sdk/completion.zsh.inc'
