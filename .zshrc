@@ -66,14 +66,3 @@ alias help=run-help
 #Start Aliases
 alias la='ls -al --color=auto'
 alias ls='ls --color=auto'
-alias emacs='emacs -nw'
-alias pacman='pacmatic'
-
-export NVM_DIR="/home/jhartley/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
-
-# The next line updates PATH for the Google Cloud SDK.
-source '/home/jhartley/Downloads/google-cloud-sdk/path.zsh.inc'
-
-# The next line enables shell command completion for gcloud.
-source '/home/jhartley/Downloads/google-cloud-sdk/completion.zsh.inc'
