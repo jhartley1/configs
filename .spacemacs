@@ -347,6 +347,8 @@ executes.
  This function is mostly useful for variables that need to be set
 before packages are loaded. If you are unsure, you should try in setting them in
 `dotspacemacs/user-config' first."
+  (setq org-directory "~/Dropbox/org/")
+  (setq org-agenda-files (list org-directory))
   )
 
 (defun dotspacemacs/user-config ()
@@ -355,8 +357,6 @@ This function is called at the very end of Spacemacs startup, after layer
 configuration.
 Put your configuration code here, except for variables that should be set
 before packages are loaded."
-  (setq org-directory "~/Dropbox/org/")
-  (org-agenda-files (list org-directory))
   )
 
 ;; Do not write anything past this comment. This is where Emacs will
